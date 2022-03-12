@@ -536,14 +536,30 @@ Practice
 ======================
 Addional Resources
 ======================
+    - The CSS Cascade is a great, interactive read that goes a little more 
+        in detail about other factors that affect what CSS rules actually 
+        end up being applied.
 
+      https://wattenberger.com/blog/css-cascade
 
+    - Changing the Font Family describes a few different approaches to
+        using custom fonts.
+    
+      https://www.bitdegree.org/learn/font-family-css#how-to-use-a-downloaded-font
 
+    - CSS Specificity from W3Schools goes over how you can calculate the
+        specificity of rules. This page mentions some selectors that we will
+        go over in a later lesson, so don’t worry about what they are or how
+        to use them right now.
 
-    The CSS Cascade is a great, interactive read that goes a little more in detail about other factors that affect what CSS rules actually end up being applied.
-    Changing the Font Family describes a few different approaches to using custom fonts.
-    CSS Specificity from W3Schools goes over how you can calculate the specificity of rules. This page mentions some selectors that we will go over in a later lesson, so don’t worry about what they are or how to use them right now.
-    Mozilla CSS Properties Reference can be used to learn if a particular CSS property is inherited or not; simply look for the Inherited field inside the Formal Definition section. Here’s an example for the CSS color property.
+      https://www.w3schools.com/css/css_specificity.asp
+
+    - Mozilla CSS Properties Reference can be used to learn if a particular
+        CSS property is inherited or not; simply look for the Inherited field
+        inside the Formal Definition section. Here’s an example for the
+        CSS color property. https://developer.mozilla.org/en-US/docs/Web/CSS/color#formal_definition
+
+      https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference
 
 
 CSS Legal Color Values - https://www.w3schools.com/cssref/css_colors_legal.asp
