@@ -1,0 +1,22 @@
+CSS notes - 20220312
+=============
+The Odin Project
+Foundations - The Box Model
+Source: https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/the-box-model
+-----------------------------------
+
+======================
+Introduction
+======================
+    The most important skills you need to master with CSS are positioning
+and layout. Changing fonts and colors is a crucial skill, but being able to
+put things exactly where you want them on a webpage is even more crucial.
+
+======================
+Learning Outcomes
+======================
+    - You’ll learn all about the box model.
+    - You’ll learn how to make sure elements are just the right size with
+        margin, padding, and borders
+
+
