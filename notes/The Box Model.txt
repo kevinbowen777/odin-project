@@ -19,4 +19,6 @@ Learning Outcomes
     - You’ll learn how to make sure elements are just the right size with
         margin, padding, and borders
 
-
+======================
+The Box Model
+======================
