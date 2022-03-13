@@ -55,3 +55,26 @@ Assignment
 ======================
 Additional Resources
 ======================
+    - Firefox Developer Tools
+        browser tools, dev tools, firefox, web development
+    - MDN - https://firefox-dev.tools/
+        https://developer.mozilla.org/en-US/docs/Tools
+    - Browser Toolbox
+        https://developer.mozilla.org/en-US/docs/Tools/Browser_Toolbox
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
