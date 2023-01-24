@@ -1,0 +1,12 @@
+The Odin Project
+Foundations - 03. Git Basics
+Source: https://www.theodinproject.com/paths/foundations/courses/foundations
+Date Started:
+Updated:
+Date Completed:
+-----------------------------------
+
+Introduction to Git
+===================
+Git Basics
+==========

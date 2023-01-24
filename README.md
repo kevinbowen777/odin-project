@@ -1,16 +1,28 @@
-## odin-project - exercise, notes, and projects from working on [The Odin Project](https://www.theodinproject.com/)
+## odin-project
 
 
 ---
-## Summary
- - email verification for account registration & password/email change
+## Project Summary
 
-### Live Demos: 
+ - Exercises, notes, and projects from working on [The Odin Project](https://www.theodinproject.com/)
+
+### Course Outline
+ - Foundations
+   - Introduction
+   - Prerequisites
+   - Git Basics
+   - HTML Foundations
+   - CSS Foundations
+   - Flexbox
+   - JavaScript Basics
+   - The Back End
+   - Conclusion
+
+### Learning Path
+
  - TBD
-
-### Docker Container Image:
-
- - TBD
+ - Full Stack Ruby on Rails
+ - Full Stack JavaScript
 
 ---
 ## Screenshots

@@ -1,0 +1,12 @@
+The Odin Project
+Foundations - 08. The Back End
+Source: https://www.theodinproject.com/paths/foundations/courses/foundations
+Date Started:
+Updated:
+Date Completed:
+-----------------------------------
+
+Introduction to the Back End
+============================
+Introduction to Frameworks
+==========================

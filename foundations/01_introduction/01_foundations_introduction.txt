@@ -1,0 +1,18 @@
+The Odin Project
+Foundations - 01. Introduction
+Source: https://www.theodinproject.com/paths/foundations/courses/foundations
+Date Started: 20230124
+Updated:
+Date Completed:
+-----------------------------------
+
+How this Course Will Work
+=========================
+Introduction to Web Development
+===============================
+Motivation and Mindset
+======================
+Asking for Help
+===============
+Join the Odin Community
+=======================
