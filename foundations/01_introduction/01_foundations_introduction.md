@@ -291,10 +291,45 @@ In essence, “help others help you!”
   - Describe three attributes of a "help vampire".
 
 ---
-## V. Join the Odin Community
+## V. [Join the Odin Community](https://www.theodinproject.com/lessons/foundations-join-the-odin-community)
 
+  - [The Odin Project - Discord Channel](https://discord.com/invite/fbFCkYabZB)
 
+Too many links & info contained in this chapter. Just read the whold thing.
 
+#### Asking for Help
+
+When asking your question, please remember to include the context:
+
+  - What do you think the problem is?
+  - What exactly do you want to happen?
+  - What is actually happening?
+  - How did you get there?
+  - What have you tried so far?
+
+#### How to Help Others Solve Coding Problems
+
+1. Instead of Answering the Question, Guide Them to the Answer
+2. Help Only When You Are Certain of the Answer
+3. Help Only When No One Else Is Currently Helping
+4. Help Only When You Have Plenty of Time
+5. Adjust Your Expectations to Their Level
+6. Ask for Clarifications
+7. Ask for Live Code
+8. Do Not Answer Googleable Questions
+9. Do Not Answer Questions Covered in Our Curriculum
+10. Answer the Question Before Pointing Out Other Problems
+11. Encourage Students to Use a Debugger
+12. Watch for Students That Need to Take a Step Back
+13. Watch for Students That Are in over Their Head
+14. Admit When the Problem Goes Beyond Your Current Knowledge
+15. Be Patient
+16. Duck Out of the Conversation If You Get Frustrated
+
+### Assignment
+
+1. Create a [GitHub account](https://github.com/join)
+2. Sign into [Odin Discord Server](https://discord.gg/fbFCkYabZB)
 
 ---
 
