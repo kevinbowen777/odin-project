@@ -5,7 +5,7 @@
  - [Source](https://www.theodinproject.com/paths/foundations/courses/foundations)
  - Date Started: 20230124
  - Updated:
- - Date Completed:
+ - Date Completed: 20230125
 ---
 
 ## I. Introduction
