@@ -125,7 +125,6 @@ See also: [3 Web Dev Careers Decoded: Front-End vs Back-End vs Full Stack](https
 ---
 ### Additional Resources:
 
-    
   - [Why Learning to Code is So Damn Hard](https://www.thinkful.com/blog/why-learning-to-code-is-so-damn-hard/)
   - [Quora: How can I Become a Really Good Web Developer?](http://www.quora.com/Computer-Programming/How-can-I-become-a-really-good-Web-Developer-starting-from-now-at-age-20-before-age-25)
   - [Quora: What makes a great web developer?](http://www.quora.com/What-makes-a-great-web-developer)
@@ -138,10 +137,121 @@ See also: [3 Web Dev Careers Decoded: Front-End vs Back-End vs Full Stack](https
   - [Roadmap to becoming a web developer in 2022](https://github.com/kamranahmedse/developer-roadmap)
 
 ---
-## III. Motivation and Mindset
+## III. [Motivation and Mindset](https://www.theodinproject.com/lessons/foundations-motivation-and-mindset)
 
+Things that will help you succeed in your goal of learning to code and the
+pitfalls that you should try to avoid.
 
+### Motivation
 
+  - Do you want to have a fufilling career that pays well?
+  - Are you excited by the creative outlet programming provides?
+  - Are you determined to develop the skills and abilities to build an app
+  you can think of?
+  - Do you want to start your own company by turning an app idea into reality?
+  
+Whatever it is, this will be what pulls you through to the end of the journey,
+giving you a definitive goal to aim towards.
+
+You can read about the success of others in the discord [odin-success-stories](https://discord.com/channels/505093832157691914/705776663497277490)
+
+### Growth Mindset
+
+Your mindset is very important when teaching yourself _any_ new skills, not
+just programming. Your mindset will have more of an impact on your chances of
+success than just about anything else.
+
+Intelligence is _not_ fixed but can, instead, be developed. Someone with a
+growth mindset believes they can get better at anythin with effort and
+persistence.
+
+Struggling with something is growth. It doesn't matter how long you struggle
+with a concept or project; all that matters is that you have the grit and
+tenacity to see it through. That's how real learning happens.
+
+Embrace the struggles you encounter with difficult concepts and complex projects.
+Celebrate your persistence at overcoming those struggles!
+
+When you find yourself questioning your abilities, reflect on the successes
+you have already acheived while learning: the projects that you have completed
+and the concepts you once didn't understand but now do.
+
+To learn more about the growth mindset, checkout these resources:
+
+  - [Believe you can get better](https://www.ted.com/talks/carol_dweck_the_power_of_believing_that_you_can_improve)
+  - [Grit](https://ted.com/talks/angela_lee_duckworth_grit_the_power_of_passion_and_perseverance)
+  - [You can learn anything](https://www.khanacademy.org/talks-and-interviews/conversations-with-sal/a/the-learning-myth-why-ill-never-tell-my-son-hes-smart)
+
+### The Learning Process
+
+Learning concepts and then practicing them will help you to more fully
+understand how things work and fit together. Projects are the ultimate method
+for ensuring that your theoretical understanding aligns with how programming
+concepts and techniques actually operate.
+
+When learning, your mind will consistently switch between focus mode and
+diffuse mode. __Focus mode__ occurs when you are consciously focusing on
+learning, reading, watching videos, or working on a project. __Diffuse mode__
+occurs subconsciously, at times when you are _not_ actively learning, such as
+when you are doing the dishes, exercising, or sleeping. In this state, your
+mind goes about the business of connecting what you have been learning to the
+other things you know. This is where breakthroughs happen.
+
+When stuck on a concept or project, taking a break to refresh and let your
+subconscious work on making connections more often than not yields a solution
+to your problem. The trick is to put effort into solving the problem first
+and then take a break.
+
+### What to Do When You’re Stuck
+
+  - Search the web: You can be certain someone else out there has encountered
+  the same problem as you at some point. A quick web search can often lead to
+  a solution.
+  - Take a break: Allow your diffuse learning state to work on the problem.
+  - Ask in a chat: Come prepared with your research. People will be more willing
+  to help you when they see you have already put effort into trying to figure
+  out the solution on your own.
+  
+### Manage your study time
+
+You will have more success with Odin by putting consistent time into it
+rather than working on it once a week. Building a habit of studying every day
+at a specific time and with a specific goal will ensure that you make
+consistent progress.
+
+### Pitfalls to avoid
+
+#### __Procrastination__
+
+Procrastination will be your biggest enemy when trying to make progress.
+
+__Solution__:
+  - [The Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique)
+
+#### __Not taking breaks__
+
+Read [this article](https://simpleprogrammer.com/taking-breaks-will-boost-productivity/)
+for more information on breaks & productivity.
+
+#### __Digital Distractions__
+
+#### __Physical Distractions__
+
+#### __Rabbit Holes__
+
+__Solution__: Stick to the path laid out as much as possible. Try to limit
+time spent going down rabbit holes as these sidetracks can really ruin your momentum.
+
+#### Comparing Yourself to Others
+Only compare yourself to your past self. Be proud of the progress you have made.
+
+---
+
+### Additional Resources
+
+  - [Managing inspiration and motivation](https://markmanson.net/do-something)
+  - [Learning to code when it gets dark](https://medium.freecodecamp.org/learning-to-code-when-it-gets-dark-e485edfb58fd#.yjh0fehje)
+  - [Why Procrastinators Procrastinate](https://waitbutwhy.com/2013/10/why-procrastinators-procrastinate.html)
 ---
 ## IV. Asking for Help
 
@@ -156,3 +266,28 @@ See also: [3 Web Dev Careers Decoded: Front-End vs Back-End vs Full Stack](https
 
 
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
