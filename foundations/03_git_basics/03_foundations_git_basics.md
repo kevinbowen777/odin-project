@@ -5,7 +5,7 @@
   - Source: https://www.theodinproject.com/paths/foundations/courses/foundations
   - Date Started: 20230125
   - Updated:
-  - Date Completed:
+  - Date Completed: 20230125
 ---
 
 Read through this section if you need an introduction to Git or just a refresher.
@@ -61,6 +61,14 @@ Pro Git book. It is freely downloadable from the provided link.
 
 
 ---
-### Git Basics
+### [Git Basics](https://www.theodinproject.com/lessons/foundations-git-basics)
+
+Read entire section if you need an introductory Git/GitHub tutorial
+
+#### Lesson Overview
+
+  - How to create a repository on GitHub.
+  - How to get files to and from GitHub.
+  - How to take “snapshots” of your code.
 
 ---
