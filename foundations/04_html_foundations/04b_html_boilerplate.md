@@ -1,7 +1,7 @@
 ## The Odin Project
 
 # Foundations - 04. HTML Foundations
-## 04. - Introduction to HTML and CSS
+## 04b. - HTML Boilerplate
 
   - [Source](https://www.theodinproject.com/paths/foundations/courses/foundations)
   - Date Started: 20230125
@@ -9,11 +9,9 @@
   - Date Completed:
 ---
 
-#### Table of Contents
-
-  - [Introduction to HTML and CSS(this document)](04_foundations_html_foundations.md)
+  - [Introduction to HTML and CSS](04_foundations_html_foundations.md)
   - [Elements and Tags](04a_elements_and_tags.md)
-  - [HTML Boilerplate](04b_html_boilerplate.md)
+  - [HTML Boilerplate(this document)](04b_html_boilerplate.md)
   - [Working with Text](04c_working_with_text.md)
   - [Lists](04d_lists.md)
   - [Links and Images](04e_links_and_images.md)
@@ -21,7 +19,4 @@
   - [Project: Recipes](#)
   
 ---
-
-### [Introduction to HTML and CSS](https://www.theodinproject.com/lessons/foundations-introduction-to-html-and-css)
-
-
+### [HTML Boilerplate](https://www.theodinproject.com/lessons/foundations-html-boilerplate)
