@@ -22,3 +22,23 @@
   
 ---
 ### [Elements and Tags](https://www.theodinproject.com/lessons/foundations-elements-and-tags)
+
+#### Introduction
+#### Lesson Overview
+
+  - Explain what HTML Tags are
+  - Explain what HTML elements are
+  
+#### Elements and Tags
+#### Assignment
+
+1. 
+
+#### Knowledge Check
+
+  - []()
+  - []()
+  
+#### Additional Resources
+
+  - []()
