@@ -20,3 +20,49 @@
   
 ---
 ### [Links and Images](https://www.theodinproject.com/lessons/foundations-links-and-images)
+
+#### Introduction
+#### Lesson Overview
+
+  - How to create links to pages on other websites on the internet
+  - How to create links to other pages on your own websites
+  - The difference between absolute and relative links
+  - How to display an image on webpage using HTML
+
+#### Preparation
+#### Anchor Elements
+#### Absolute and Relative Links
+##### Absolute Links
+##### Relative Links
+##### A Metaphor
+#### Parent Directories
+#### Alt attribute
+#### Images
+
+
+#### Assignment
+
+  - Watch Kevin Powell’s HTML Links Video.
+  - Watch Kevin Powell’s HTML Images Video.
+  - Watch Kevin Powell’s File Structure Video.
+  - Read about the four main image formats that can be used on the web.
+
+
+
+#### Knowledge Check
+
+  - What element is used to create a link?
+  - What is an attribute?
+  - What attribute tells links where to go to?
+  - What is the difference between an absolute and relative link?
+  - Which element is used to display an image?
+  - What two attributes do images always need to have?
+  - How do you access a parent directory in a filepath?
+  - What are the four main image formats that you can use for images on the web?
+
+  
+#### Additional Resources
+
+  - Interneting is hard’s treatment on HTML links and images
+  - What happened the day Google decided links including (/) were malware
+
