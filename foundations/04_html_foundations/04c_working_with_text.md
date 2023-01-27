@@ -20,3 +20,49 @@
   
 ---
 ### [Working with Text](https://www.theodinproject.com/lessons/foundations-working-with-text)
+
+#### Introduction
+#### Lesson Overview
+
+  - How to create paragraphs
+  - How to create headings
+  - How to create bold text
+  - How to create italicized text
+  - The relationships between nested elements
+  - How to create HTML comments
+
+  
+#### Paragraphs
+#### Headings
+#### Strong Element
+#### Em Element
+#### Nesting and Indentation
+#### HTML Comments
+
+#### Assignment
+
+1. Watch Kevin Powell’s HTML Paragraph and Headings Video
+2. Watch Kevin Powell’s HTML Bold and Italic Text Video
+3. To get some practice working with text in HTML, create a plain blog article page which uses different headings, uses paragraphs, and has some text in the paragraphs bolded and italicized. You can use Lorem Ipsum to generate dummy text, in place of real text as you build your sites.
+
+
+
+#### Knowledge Check
+
+  - How do you create a paragraph in HTML?
+  - How do you create a heading in HTML?
+  - How many different levels of headings are there and what is the difference between them?
+  - What element should you use to make text bold and important?
+  - What element should you use to make text italicized to add emphasis to it?
+  - What relationship does an element have with any nested elements within it?
+  - What relationship do two elements have if they are at the same level of nesting?
+  - How do you create HTML comments?
+
+
+  
+#### Additional Resources
+
+
+  - The semantic difference between **<strong\>** and **<b\>** or *<em\>* and *<i\>* tags and when to use them.
+  - An interactive HTML text formatting article
+
