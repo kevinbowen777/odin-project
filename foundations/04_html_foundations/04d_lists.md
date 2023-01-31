@@ -29,7 +29,30 @@
   - How to create an ordered list
   
 #### Unordered Lists
+
+Unordered lists are created using the `<ul>` element, and each item within the list is created using the list item element `<li>`.
+
+```html
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+<ul>
+```
+
+Each list item in an unordered list begins with a bullet point.
+
 #### Ordered Lists
+
+Ordered lists are created using the `<ol>` element. Each individual item in them is again created using the list item element `<li>`. Each list item in an ordered list begins with a number.
+
+```html
+<ol>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ol>
+```
 
 #### Assignment
 
@@ -50,7 +73,7 @@ To get some practice using lists, create a new HTML document and create the foll
   
 #### Additional Resources
 
-  - MDN documentation on the unordered list element
-  - MDN documentation on the ordered list element
-  - Shay Howe’s HTML lists tutorial
+  - [MDN documentation on the unordered list element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul)
+  - [MDN documentation on the ordered list element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol)
+  - [Shay Howe’s HTML lists tutorial](https://learn.shayhowe.com/html-css/creating-lists/)
 
