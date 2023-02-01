@@ -22,6 +22,9 @@
 ### [Commit Messages](https://www.theodinproject.com/lessons/foundations-commit-messages)
 
 #### Introduction
+
+This lesson will explain the importance of good commit messages, how to write them, when to commit and why having a history of good commits is so important!
+
 #### Lesson Overview
 
   - How to write a meaningful commit message
@@ -29,7 +32,21 @@
   - When to commit
   
 #### Are Commit Messages So Important They Deserve Their Own Lesson?
+
+
+
+  - When you are applying for jobs, employers will look through your projects on GitHub and they will look through your commit history. Having good commits as a novice developer will help you stand out.
+
+  - Having a good commit message history will allow you (or other developers working on your code) to quickly see what changes were made and why. This is useful if a bug is found in the code that needs to be fixed!
+
+  - Having a good commit message history will also be helpful if you come back to a project you were working on after stepping away from it for a while. You likely won’t remember your thought process and changes made when initially writing out the code.
+
 #### When to Commit
+
+When writing code, it’s considered best practice to commit every time you have a meaningful change in the code. This will create a timeline of your progress and show that your finished code didn’t appear out of nowhere.
+
+This means, make a commit if you get a piece of code you are working on to function like you want it to, fix a typo, or fix a bug. As you gain experience, you will develop a better feel for what should be committed!
+
 #### Assignment
 
 1. This article, [How to Write a Git Commit Message](https://cbea.ms/git-commit), covers all the main bases on how to write good commit messages. The whole article is great and informative but the meat of the article is “The seven rules of a great commit message.”
