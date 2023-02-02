@@ -596,16 +596,186 @@ specificity value. But rule 1 uses the universal selector (`*`) which has no
 specificity value.
 
 ##### Inheritance
+
+Inheritance refers to certain CSS properties that, when applied to an element,
+are inherited by that element's descendants, even if we don't explicitly write
+a rule for those descendants. Typography based properties (`color`, `font-size`,
+`font-family`, etc.) are usually inherited, while most other properties are not.
+
+The exception to this is when directly targeting an element, as this always
+beats inheritance:
+
+```html
+<!-- index.html -->
+
+<div id="parent">
+  <div class="child"></div>
+</div>
+```
+
+```css
+/* styles.css */
+
+#parent {
+  color: red;
+}
+
+.child {
+  color: blue;
+}
+```
+
+Despite the `parent` element having a higher specificity with an ID, the `child`
+element would have the `color:blue` style applied since that declaration directly
+targets it, while `color: red` from the parent is only inherited.
+
 ##### Rule Order
 
+The final factor, the end of the line, the tie-breaker of the tie-breaker. Let's
+say that after every other factor has been taken into account, there are still
+multiple conflicting rules targeting an element. How does the cascade determine
+while rule to apply?
+
+Really simply, actually. Whichever rule was the *last* defined is the winner.
+
+```css
+/* styles.css */
+
+.alert {
+  color: red;
+}
+
+.warning {
+  color: yellow;
+}
+```
+
+For an element that has both the `alert` and `warning` classes, the cascade would
+run through every other factor, including inheritance (none here) and specificity
+(neither rule is more specific than the other). Since the `.warning` rule was
+the last one defined, and no other factor was able to determine which rule to
+apply, it's the one that gets applied to the element.
+
 #### Adding CSS to HTML
+
+How to add CSS to HTML. There are three methods to do so.
+
 ##### External CSS
+
+External CSS is the most common method you will come across, and it involves
+creating a separate file for the CSS and linking it inside of an HTML's opening
+and closing `<head>` tags with a self-closing `<link>` element:
+
+```html
+<!-- index.html -->
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+```
+
+```css
+/* styles.css */
+
+div {
+  color: white;
+  background-color: black;
+}
+
+p {
+  color: red;
+}
+```
+
+First, we add a self-closing `<link>` element inside of the opening and closing
+`<head>` tags of the HTML file. The `href` attribute is the location of the CSS file,
+either an absolute URL or, what you'll be utilizing, a URL relative to the location
+of the HTML file. In our example above, we are assuming both files are located
+in the same directory. The `rel` attribute is required, and it specifies the 
+relationship between the HTML file and the linked file.
+
+Then inside of the newly created `styles.css` file, we have the selector (the 
+`div` and `p`), followed by a pair of opening and closing curly braces, which
+create a "declaration block". Finally, we place any declarations inside of the
+declaration block. `color: white;` is one declaration, with `color` being the
+*property* and `white` being the *value*, and `background-color: black;` is
+another declaration.
+
+A note on file names: `styles.css` is just what we went with as the file name
+here. You can name the file whatever you want as long as the file type is `.css`,
+though "style" or "styles" is most commonly used.
+
+A couple of the pros to this method are:
+
+1. It keeps our HTML and CSS separated, which results in the HTML file being
+smaller and making things look cleaner.
+2. We only need to edit the CSS in *one* place, which is especially handy for
+websites with many pages that all share similary styles.
+
 ##### Internal CSS
+
+Internal CSS(or embedded CSS) involves adding the CSS within the HTML file
+itself instead of creating a completely separate file. With the internal method,
+you place all the rules inside a pair of opening and closing `<style>` tags,
+which are then placed inside of the opening and closing `<head>` tags of your
+HTML file. Since the styles are being placed directly inside of the `<head>`
+tags, we no longer need a `<link>` element that the external method requires.
+
+Besides these differences, the syntax is exactly the same as the external 
+method(selector, curly braces, declarations):
+
+```html
+<!-- index.html -->
+
+<head>
+  <style>
+    div {
+      color: white;
+      background-color: black;
+    }
+    
+    p {
+      color: red;
+    }
+  </style>
+</head>
+<body>...</body>
+```
+
+This method can be useful for adding unique styles to a *single page* of a 
+website, but it doesn't keep things separate like the external method, and 
+depending on how many rules and declarations there are it can cause the HTML
+file to get pretty large.
+
 ##### Inline CSS
 
+Inline CSS makes it possible to add styles directly to HTML elements, though
+this method isn't as recommended:
+
+```html
+<body>
+  <div style="color: white; background-color: black;">...</div>
+</body>
+```
+
+The first thing to note is that we don't actually use any selectors here, since
+the styles are being added directly to the opening `<div>` tag itself. Next,
+we have the `style=` attribute, with its value within the pair of quotation
+marks being the declarations.
+
+If you need to add a *unique* style for a *single* element, this method can
+work just fine. Generally, though, this isn't exactly a recommended way for 
+adding CSS to HTML for a few reasons:
+
+ - It can quickly become pretty messy once you start adding a *lot* of declarations
+ to a single element, causing your HTML file to become unnecessarily bloated.
+ - If you want many elements to have the same style, you would have to copy +
+ paste the same style to each individual element, causing lots of unnecessary
+ repetition and more bloat.
+ - Any inline CSS will override the other two methods, which can cause unexpected
+ results. (While we don't dive into it here, this can actually be taken advantage of).
 
 #### Assignment
-
 
 1. Go to our [CSS exercises repository](https://github.com/TheOdinProject/css-exercises), read the README, and only do the exercises in the foundations directory in the order they’re listed, starting with 01-css-methods and ending with 06-cascade-fix.
 
