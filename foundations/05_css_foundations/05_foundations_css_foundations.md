@@ -348,6 +348,7 @@ is a keyword, such as an actual color name like `red` or the `transparent` keywo
 They also accept HEX, RGG, and HSL values.
 
 ```css
+
 p {
   /* HEX example */
   color: #1100ff;
@@ -370,7 +371,7 @@ whitespace between words) or a "generic family name" like `sans-serif` (generic 
 names never use quotes).
 
 If a browser cannot find or does not support the first font in a list, it will
-use the next one, and so on until it finda a supported and valid font. This is
+use the next one, and so on until it finds a supported and valid font. This is
 why it's best practice to include a list of values for this property, starting
 with the font you want to be used most and ending with a generic font family
 as a fallback, e.g `font-family: "DejaVu Sans", sans-serif;`
@@ -379,7 +380,7 @@ as a fallback, e.g `font-family: "DejaVu Sans", sans-serif;`
 the value should not contain any whitespace, e.g. `font-size: 22px` has no space
 between "22" and "px".
 
-`font-weight` affects the boldness of text, assuming the font suppors the specified
+`font-weight` affects the boldness of text, assuming the font supports the specified
 weight. The value can be a keyword, e.g. `font-weight: bold`, or a number
 between 1 and 1000, e.g. `font-weight: 700` (the equivalent of `bold`). Usually,
 the numeric values will be in increments of 100 up to 900, though this will depend
@@ -400,6 +401,7 @@ of the image without causing it to lose its proportions, you would use a value
 of “auto” for the `height` property and adjust the `width` value:
 
 ```css
+
 img {
   height: auto;
   width: 500px;
@@ -426,6 +428,173 @@ which we’ll go over to hopefully help you avoid (as many of) those frustrating
 “I hate CSS” moments.
 
 ##### Specificity
+
+A CSS declaration that is more specific will take precedenct over less specific ones.
+Inline styles have the highest specificity compared to selectors, while each
+type of selector has its own specificity level that contribures to how specific a
+declaration is. Other selectors contribute to specificity, but we're only focusing
+on the ones mentioned in this lesson:
+
+1. ID selectors (most specific selector)
+2. Class selectors
+3. Type selectors
+
+Specificity will only be taken into account when an element has multiple, conflicting
+declarations targeting it, sort of like a tie-breaker. An ID selector will always
+beat any number of class selectors, a class selector will always beat any number
+of type selectors, and a type selector will always beat any number of anything
+less specific than it. When no declaration has a selector with a higher specificity,
+a larger amount of a single selector will beat a smaller amount of that same selector.
+
+Let's take a look at a few quick examples to visualize how specificity works.
+Consider the following HTML and CSS code:
+
+```html
+<!-- index.html -->
+
+<div class="main">
+  <div class="list subsection"></div>
+</div>
+```
+
+```css
+/* rule 1 */
+
+.subsection {
+  color: blue;
+}
+
+/* rule 2 */
+
+.main .list {
+  color: red;
+}
+```
+In the example above, both rules are using only class selectors, but rule 2 is
+more specific because it is using more class selectors, so the `color: red;`
+declaration would take precedence.
+
+Now, let's change things a little bit:
+
+```html
+<!-- index.html -->
+
+<div class="main">
+  <div class="list" id="subsection"></div>
+</div>
+```
+
+
+```css
+/* rule 1 */
+
+#subsection {
+  color: blue;
+}
+
+/* rule 2 */
+
+.main .list {
+  color: red;
+}
+```
+In the example above, despite rule 2 having more class selectors than ID selectors,
+rule 1 is more specific because ID beats class. In this case, the `color: blue;`
+declaration would take precedence.
+
+Let's consider one final example:
+
+```html
+<!-- index.html -->
+
+<div class="main">
+  <div class="list>
+    <div id="subsection"></div>
+  </div>
+</div>
+```
+
+```css
+/* rule 1 */
+
+.list #subsection {
+  background-color: yellow;
+  color: blue;
+}
+
+/* rule 2 */
+
+.main .list #subsection {
+  color: red;
+}
+```
+
+In this example, both rules are using ID and class selectors, so neither rule is 
+using a more specific selector than the other. the cascade then checks the amounts
+of each selector type. Both rules only have one ID selector, but rule 2 has more
+class selectors, so rule 2 has a higher specificity!
+
+While the `color:red` declaration would take precedence, the `background-color: yellow;`
+declaration would still be applied since there is no conflicting declaration for it.
+
+Note: When comparing selectors, you may come across special symbols for the 
+universal selector (`*`) as well as combinators (`+`,`~`,`>`, and an empty space).
+These symbols do not add any specificity in and of themselves.
+
+```css
+/* rule 1 */
+
+.class.second-class {
+  font-size: 12px;
+}
+
+/* rule 2 */
+
+.class .second-class {
+  font-size: 24px;
+}
+```
+
+Here both rule 1 and rule 2 have the same specificity. Rule 1 uses a chaining
+selector(no space) and rule 2 uses a descendant combinator(the empty space).
+But both rules have two classes and the combinator symbol itself does not add to 
+the specificity.
+
+```css
+/* rule 1 */
+
+.class.second-class {
+  font-size: 12px;
+}
+
+/* rule 2 */
+
+.class > .second-class {
+  font-size: 24px;
+}
+```
+This example shows the same thing. Even though rule 2 is using a child combinator (`>'),
+this does not change the specificity value. Both rules still have two classes
+so they have the same specificity values.
+
+```css
+/* rule 1 */
+
+* {
+  color: black;
+}
+
+/* rule 2 */
+
+h1 {
+  color: orange;
+}
+```
+In this example, rule 2 would have higher specificity and the `orange` value would
+take precedence for this element. Rule 2 uses a type selector, which has the lowest
+specificity value. But rule 1 uses the universal selector (`*`) which has no
+specificity value.
+
 ##### Inheritance
 ##### Rule Order
 
