@@ -16,7 +16,7 @@
   - [Lists](04d_lists.md)
   - [Links and Images](04e_links_and_images.md)
   - [Commit Messages](04f_commit_messages.md)
-  - [Project: Recipes](#)
+  - [Project: Recipes](04g_project_recipes.md)
   
 ---
 ### [HTML Boilerplate](https://www.theodinproject.com/lessons/foundations-html-boilerplate)
