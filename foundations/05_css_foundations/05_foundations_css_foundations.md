@@ -22,7 +22,7 @@
   - [Introduction](#Introduction)
   - [Lesson Overview](#Lesson Overview)
   - [Basic Syntax](#Basic Syntax)
-  -  [Selectors](#Selector)
+  - [Selectors](#Selector)
     - [Universal Selector](#Universal Selector)
     - [Type Selector](#Type Selector)
     - [Class Selector](#Class Selector)
