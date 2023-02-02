@@ -5,7 +5,7 @@
 
   - [Source](https://www.theodinproject.com/paths/foundations/courses/foundations)
   - Date Started: 20230125
-  - Updated: 20230126
+  - Updated: 20230201
   - Date Completed:
 ---
 
@@ -19,7 +19,35 @@
 ---
 ### [CSS Foundations](https://www.theodinproject.com/lessons/foundations-css-foundations)
 
+  - [Introduction](#Introduction)
+  - [Lesson Overview](#Lesson Overview)
+  - [Basic Syntax](#Basic Syntax)
+  -  [Selectors](#Selector)
+    - [Universal Selector](#Universal Selector)
+    - [Type Selector](#Type Selector)
+    - [Class Selector](#Class Selector)
+    - [ID Selectors](#ID Selectors)
+    - [Grouping Selectors](#Grouping Selectors)
+    - [Chaining Selectors](#Chaining Selectors)
+    - [Descendant Combinator](#Descendant Combinator)
+  - [Properties to Get Started With](#Properties to Get Started With)
+    - [Color and Background-Color](#Typography Basics and Text-Align])
+    - [Typography Basics and Text-Align](#)
+    - [Image Height and Width](#Image Height and Width)
+  - [The Cascade of CSS](#The Cascade of CSS)
+    - [Specificity](#Specificity)
+    - [Inheritance](#Inheritance)
+    - [Rule Order](#Rule Order)
+  - [Adding CSS to HTML](#Adding CSS to HTML)
+    - [External CSS](#External CSS)
+    - [Internal CSS](#Internal CSS)
+    - [Inline CSS](#Inline CSS)
+
+
 #### Introduction
+
+In the previous lesson, you learned how to write the HTML that determines how a web page is structured. The next step is to make that structure look good with some style, which is exactly what CSS is for. In this lesson, we’re going to focus on what we believe are some foundational CSS concepts, things that everyone should know from the beginning — whether they are just starting out or simply need a refresher.
+
 #### Lesson Overview
 
   - Add styles to HTML with CSS.
@@ -28,11 +56,107 @@
   - Understand what the cascade does.
   
 #### Basic Syntax
+
+At the most basic level, CSS is made up of various rules. These rules are made
+up of a selector and a semi-colon separated list of declarations, with each
+of those declarations being made up of a `property:value` pair.
+
+```css
+   selector
+      |
+div.bold-text {
+  font-weight: 700;
+}     |         |
+   property   value
+```
+
+> Note
+>
+> A `<div>` is one of the basic HTML elements. It is simply an empty container.
+> In general, it is best to use other tags such as `<h1>` or `<p>` for content
+> in your projects, but as we learn more about CSS you'll find that there are
+> many cases where the thing you need is just a container for other elements.
+> Many of our exercises use plain `<div>`s for simplicity. Later lessons will go
+> into much more depth about when it is appropriate to use the various HTML elements.
+
 #### Selectors
+
+Selectors simply refer to the HTML elements to which HTML rules apply; they're
+what is actually being "selected" for each rule. The following subsections don't
+cover every selector available, butt they're by far the most common and the ones
+you should get comfortable using.
+
 ##### Universal Selector
+
+The universal selector will select elements of any type, hence the name "universal",
+and the syntax for it is a simple asterisk. In the example below, every element
+would have the `color: purple;` style applied to it.
+
+```html
+* {
+color: purple;
+}
+```
+
 ##### Type Selectors
+
+A type selector (or element selector) will select all elements of the given 
+element type, and the syntax is just the name of the element:
+
+```html
+<!-- index.html -->
+
+<div>Hello, World!</div>
+<div>Hello again!</div>
+<p>Hi...</p>
+<div>Okay, bye.</div>
+```
+
+```html
+/* styles.css */
+
+div {
+  color: white;
+}
+```
+
+Here, all three `<div>` elements would be selected, while the `<p>` element
+wouldn't be.
+
 ##### Class Selector
+
+Class selectors will select all elements with the given class, which is just
+an attribute you place on an HTML element. Here is how you add a class to an
+HTML tag and select it in CSS:
+
+```html
+<!-- index.html -->
+
+<div class="alert-text">
+  Please agree to our terms of service.
+</div>
+```
+
+```html
+/* styles.css */
+
+.alert-text {
+  color: red;
+}
+```
+
+Note the syntax for class selectors: a period immediately followed by the 
+case-sensitive value of the class attribute. Classes aren't required to be
+unique, so you can use the same class on as many elements as you want.
+
+Another thing you can do with the class attribute is to add multiple classes
+to a single element as a space-separated list, such as `class="alert-text severe-alert"`.
+Since whitespace is used to separate class names like this, you should never
+use spaces for multi-worded names and should use a hyphen instead.
+
 ##### ID Selectors
+
+
 ##### Grouping Selectors
 ##### Chaining Selectors
 ##### Descendant Combinator
