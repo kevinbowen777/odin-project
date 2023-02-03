@@ -573,7 +573,7 @@ the specificity.
   font-size: 24px;
 }
 ```
-This example shows the same thing. Even though rule 2 is using a child combinator (`>'),
+This example shows the same thing. Even though rule 2 is using a child combinator (`>`),
 this does not change the specificity value. Both rules still have two classes
 so they have the same specificity values.
 
@@ -777,7 +777,7 @@ adding CSS to HTML for a few reasons:
 
 #### Assignment
 
-1. Go to our [CSS exercises repository](https://github.com/TheOdinProject/css-exercises), read the README, and only do the exercises in the foundations directory in the order they’re listed, starting with 01-css-methods and ending with 06-cascade-fix.
+1. Go to our [CSS exercises repository](https://github.com/TheOdinProject/css-exercises), read the `README`, and only do the exercises in the `foundations` directory in the order they’re listed, starting with `01-css-methods` and ending with `06-cascade-fix`.
 
 2. Remember the Recipe page you created as practice from the previous lesson? Well, it’s rather plain looking, isn’t it? Let’s fix that by adding some CSS to it!
 
