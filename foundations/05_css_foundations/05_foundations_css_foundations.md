@@ -186,7 +186,7 @@ should not contain any whitespace at all.
 
 ##### Grouping Selectors
 
-What is we have two groups of elements that share some of their style declarations?
+What if we have two groups of elements that share some of their style declarations?
 
 ```css
 
@@ -232,7 +232,7 @@ at once.
 
 ##### Chaining Selectors
 
-Another was to use selectors is to chain them as a list without any separation.
+Another way to use selectors is to chain them as a list without any separation.
 Let's say we have the following HTML:
 
 ```html
