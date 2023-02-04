@@ -6,7 +6,7 @@
   - [Source](https://www.theodinproject.com/paths/foundations/courses/foundations)
   - Date Started: 20230125
   - Updated: 20230201
-  - Date Completed:
+  - Date Completed: 20230203
 ---
 
 #### Table of Contents
@@ -121,7 +121,7 @@ div {
 ```
 
 Here, all three `<div>` elements would be selected, while the `<p>` element
-wouldn't be.
+would not be selected.
 
 ##### Class Selector
 
@@ -238,7 +238,7 @@ Let's say we have the following HTML:
 ```html
 <div>
   <div class="subsection header">Latest Posts</div>
-  <p class="subsection preview">This is where a prview for a post might go.</p>
+  <p class="subsection preview">This is where a preview for a post might go.</p>
  </div>
  ```
  
@@ -255,7 +255,7 @@ Let's say we have the following HTML:
 
 What `.subsection.header` does is it selects any element that has both the
 `subsection` and `header` classes. Notice how there isn't any space between the
-`.subsection` and `.header` class selectors. this syntax basically works for
+`.subsection` and `.header` class selectors. This syntax basically works for
 chaining any combination of selectors, except for chaining more than one
 [type selector](#type-selectors).
 
@@ -295,7 +295,7 @@ single space between selectors. A descendant combinator will only cause elements
 that match the last selector to be selected if they also have an ancestor (parent, grandparent, etc.)
 that matches the previous selector.
 
-So something like `.ancestor .child` would select and element with the class
+So something like `.ancestor .child` would select an element with the class
 `child` if it has an ancestor with the class `.ancestor`. Another way to think
 of it is `child` will only be selected if it is nested inside of `ancestor`, no
 matter how deep. Take a quick look at the example below and see if you can tell
@@ -328,7 +328,7 @@ would be selected, but that last element (D) won't be. Was your guess correct?
 There's really no limit to how many combinators you can add to a rule, so
 `.one .two .three .four` would be totally valid. This would just select an
 element that has a class of `four` if it has an ancestor with a class of `three`,
-and if that acestor has its own ancestor with a class of `two`, and so on. You
+and if that ancestor has its own ancestor with a class of `two`, and so on. You
 generally want to avoid trying to select elements that need this level of nesting,
 though, as it can get pretty confusing and long, and it can cause issues when
 it comes to specificity.
@@ -343,9 +343,9 @@ Learn the following to help get you started.
 The `color` property sets an element's text color, while `background-color` sets
 the background color of an element.
 
-Both of these properties can accept on of several kinds of values. A common one
+Both of these properties can accept one of several kinds of values. A common one
 is a keyword, such as an actual color name like `red` or the `transparent` keyword.
-They also accept HEX, RGG, and HSL values.
+They also accept **HEX**, **RGB**, and **HSL** values.
 
 ```css
 
@@ -431,7 +431,7 @@ which we’ll go over to hopefully help you avoid (as many of) those frustrating
 
 A CSS declaration that is more specific will take precedenct over less specific ones.
 Inline styles have the highest specificity compared to selectors, while each
-type of selector has its own specificity level that contribures to how specific a
+type of selector has its own specificity level that contributes to how specific a
 declaration is. Other selectors contribute to specificity, but we're only focusing
 on the ones mentioned in this lesson:
 
@@ -530,7 +530,7 @@ Let's consider one final example:
 ```
 
 In this example, both rules are using ID and class selectors, so neither rule is 
-using a more specific selector than the other. the cascade then checks the amounts
+using a more specific selector than the other. The cascade then checks the amounts
 of each selector type. Both rules only have one ID selector, but rule 2 has more
 class selectors, so rule 2 has a higher specificity!
 
