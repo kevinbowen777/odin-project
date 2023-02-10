@@ -6,7 +6,7 @@
   - [Source](https://www.theodinproject.com/paths/foundations/courses/foundations)
   - Date Started: 20230125
   - Updated: 20230126
-  - Date Completed:
+  - Date Completed: 20230209
 ---
 
 #### Table of Contents
@@ -59,7 +59,7 @@ code examples we provide, you'll know better where to look when that time comes.
 #### Let's Flex
 
 Flexbox is a way to arrange items into rows or columns. These items will
-*flex*(i.e grow or shrink) based on some simple rules that you can define.
+*flex*(i.e. grow or shrink) based on some simple rules that you can define.
 To get started, look at a simple demonstration.
 
 ```html
@@ -83,10 +83,11 @@ flex-container {
   /* flex: 1; */
 }
 ```
+---
 
-Flexbox example 2
+##### Flexbox example 2
 
-# basic.css
+#### basic.css
 ```css
 .container > div {
   padding: 10px;
@@ -113,7 +114,7 @@ html, body {
 }
 ```
 
-# index.css
+#### index.css
 ```css
 .container {
   border: 5px solid #ffcc5c;
@@ -121,7 +122,7 @@ html, body {
 }
 ```
 
-# index.html
+#### index.html
 ```html
 <html>
     <head>
@@ -137,9 +138,9 @@ html, body {
     </body>
 </html>
 ```
+---
 
-
-##### Flex Containers and Flex Items
+#### Flex Containers and Flex Items
 
 As you've seen, flexbox is not just a single CSS property but a whole toolbox
 of properties that you can use to put things where you need them. Some of these
