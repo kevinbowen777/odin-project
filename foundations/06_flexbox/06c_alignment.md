@@ -1,12 +1,12 @@
 ## The Odin Project
 
 # Foundations - 06. Flexbox
-## 06b. - Axes
+## 06b. - Alignment
 
   - [Source](https://www.theodinproject.com/paths/foundations/courses/foundations)
   - Date Started: 20230125
   - Updated: 20230126
-  - Date Completed:
+  - Date Completed: 20230214
 ---
 
 #### Table of Contents
@@ -18,17 +18,84 @@
   - [Project: Landing Page](#)
   
 ---
-### [Alignment](https://www.theodinproject.com/lessons/foundations-alignment)
+## [Alignment](https://www.theodinproject.com/lessons/foundations-alignment)
 
-#### Introduction
-#### Lesson Overview
+### Introduction
+
+So far everything we have touched with flexbox has used the rule `flex: 1` on
+all flex items, which makes the items grow or shrink equally to fill all of the 
+available space. Very often, however, this is not the desired effect. Flex is
+also very useful for arranging items that have a specific size.
+
+### Lesson Overview
 
   - You’ll learn how to align items inside a flex container both vertically and horizontally.
   
-#### Alignment
-#### Gap
+### Alignment
 
-#### Assignment
+Let's look at an example:
+
+```html
+
+<div class="container">
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+</div>
+```
+
+```css
+
+.container {
+  height: 140px;
+  padding: 16px;
+  background: plum;
+  border: 4px solid indigo;
+  display: flex;
+}
+
+.item {
+  width: 60px;
+  height: 60px;
+  border: 4px solid darkslategray;
+  background: skyblue;
+}
+```
+
+You should be able to predict what happens if you put `flex: 1` on the `.item`
+by now.
+
+Adding `flex: 1` to `.item` makes each of the items grow to fill the available
+space, but what if we wanted them to stay the same width, but distribute
+themselves differently inside the container? 
+
+Remove `flex: 1` from `.item` and add `justify-content: space-between` to 
+`.container`.
+
+`justify-content` aligns items across the **main axis**. There are a few values
+that you can use here. You'll learn the rest in the reading assignments, but
+for now try changing it to `center`, which should center the boxes along the
+main axis.
+
+To change the placement of items along the **cross axis** use `align-items`.
+Try getting the boxes to the center of the container by adding `align-items: center`
+to `.container`.
+
+Because `justify-content` and `align-items` are based on the main and cross
+axis of your container, their behavior changes when you change the flex-direction
+of a flex-container. For example, when you change `flex-direction` to `column`,
+`justify-content` aligns vertically and `align-items` aligns horizontally. The
+most common behavior, however, is the default, i.e. `justify-content` aligns
+items horizontally (because the main axis defaults to horizontal), and `align-items`
+aligns them vertically. One of the biggest sticking points that beginners have
+with flexbox is confusion when this behavior changes.
+
+
+### Gap
+
+One more very useful feature of flex is the gap property. Setting gap on a flex container simply adds a specified space between flex items, very similar to adding a margin to the items themselves. gap is a new property so it doesn’t show up in many resources yet, but it works reliably in all modern browsers, so it is safe to use and very handy!
+
+### Assignment
 
 1. This beautiful [Interactive Guide to Flexbox](https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/) covers everything you need to know. It will help reinforce concepts we’ve already touched on with some really fun and creative examples. Spend some time here, some of it should be review at this point, but the foundations here are important!
 2. [Typical use cases of Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Typical_Use_Cases_of_Flexbox) is an MDN article that covers some more practical tips. Don’t skip the interactive sections! Playing around with this stuff is how you learn it!
@@ -44,14 +111,13 @@
 
 
 
-#### Knowledge Check
+### Knowledge Check
 
   - What is the difference between justify-content and align-items?
   - How do you use flexbox to completely center a div inside a flex container?
   - What’s the difference between justify-content: space-between and justify-content: space-around?
 
-  
-#### Additional Resources
+### Additional Resources
 
   - [Flexbox Froggy](https://flexboxfroggy.com/) is a funny little game for practicing moving things around with flexbox.
   - [Flexbox Zombies](https://mastery.games/flexboxzombies/) is another gamified take on flexbox. Free, but requires an account.
