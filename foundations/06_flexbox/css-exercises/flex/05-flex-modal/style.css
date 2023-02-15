@@ -21,8 +21,8 @@ body {
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
   display: flex;
+  gap: 16px;
   padding: 16px;
-  gap: 16px
 }
 
 .icon {
@@ -48,9 +48,8 @@ body {
   height: 24px;
   width: 24px;
   display: flex;
-  flex: 1;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 button {
