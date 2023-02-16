@@ -5,11 +5,11 @@
 
   - [Source](https://www.theodinproject.com/paths/foundations/courses/foundations)
   - Date Started: 20230125
-  - Updated: 20230201
+  - Updated: 20230215
   - Date Completed: 20230203
 ---
 
-#### Table of Contents
+### Table of Contents
 
   - [CSS Foundations(this document)](05_foundations_css_foundations.md)
   - [Inspecting HTML and CSS](05a_inspecting_html_and_css.md)
@@ -44,18 +44,18 @@
     - [Inline CSS](#Inline-CSS)
 
 
-#### Introduction
+### Introduction
 
 In the previous lesson, you learned how to write the HTML that determines how a web page is structured. The next step is to make that structure look good with some style, which is exactly what CSS is for. In this lesson, we’re going to focus on what we believe are some foundational CSS concepts, things that everyone should know from the beginning — whether they are just starting out or simply need a refresher.
 
-#### Lesson Overview
+### Lesson Overview
 
   - Add styles to HTML with CSS.
   - Understand how to use the class and ID attributes.
   - Add styles to specific elements using the correct selectors.
   - Understand what the cascade does.
   
-#### Basic Syntax
+### Basic Syntax
 
 At the most basic level, CSS is made up of various rules. These rules are made
 up of a selector and a semi-colon separated list of declarations, with each
@@ -79,14 +79,14 @@ div.bold-text {
 > Many of our exercises use plain `<div>`s for simplicity. Later lessons will go
 > into much more depth about when it is appropriate to use the various HTML elements.
 
-#### Selectors
+### Selectors
 
 Selectors simply refer to the HTML elements to which HTML rules apply; they're
 what is actually being "selected" for each rule. The following subsections don't
 cover every selector available, but they're by far the most common and the ones
 you should get comfortable using.
 
-##### Universal Selector
+#### Universal Selector
 
 The universal selector will select elements of any type, hence the name "universal",
 and the syntax for it is a simple asterisk. In the example below, every element
@@ -98,7 +98,7 @@ color: purple;
 }
 ```
 
-##### Type Selectors
+#### Type Selectors
 
 A type selector (or element selector) will select all elements of the given 
 element type, and the syntax is just the name of the element:
@@ -123,7 +123,7 @@ div {
 Here, all three `<div>` elements would be selected, while the `<p>` element
 would not be selected.
 
-##### Class Selector
+#### Class Selector
 
 Class selectors will select all elements with the given class, which is just
 an attribute you place on an HTML element. Here is how you add a class to an
@@ -154,7 +154,7 @@ to a single element as a space-separated list, such as `class="alert-text severe
 Since whitespace is used to separate class names like this, you should never
 use spaces for multi-worded names and should use a hyphen instead.
 
-##### ID Selectors
+#### ID Selectors
 
 ID selectors are similar to class selectors. They select an element with the given
 ID, which is another attribute you place on an HTML element:
@@ -184,7 +184,7 @@ The major difference between classes and IDs is that an element can only have
 **one** ID. An ID cannot be repeated on a single page, and the ID attribute
 should not contain any whitespace at all.
 
-##### Grouping Selectors
+#### Grouping Selectors
 
 What if we have two groups of elements that share some of their style declarations?
 
@@ -230,7 +230,7 @@ result, but the second example reduces the repetition of declarations and makes
 it easier to edit either the `color` or `background-color` for both classes
 at once.
 
-##### Chaining Selectors
+#### Chaining Selectors
 
 Another way to use selectors is to chain them as a list without any separation.
 Let's say we have the following HTML:
@@ -285,9 +285,9 @@ be two different types at once. For example, chaining two type selectors like
 `div` and `p` would give us the selector `divp`, which wouldn't work since the
 selector would try to find a literal `<divp>` element, which doesn't exist.
 
-##### Descendant Combinator
+#### Descendant Combinator
 
-Combinators allow us to combine multiple selectors differently that either
+Combinators allow us to combine multiple selectors differently than either
 grouping or chaining them, as they show a relationship between the selectors.
 There are four types of combinators in total, but for right now we're going to
 only show you the **descendant combinator**, which is represented in CSS by a
@@ -333,12 +333,12 @@ generally want to avoid trying to select elements that need this level of nestin
 though, as it can get pretty confusing and long, and it can cause issues when
 it comes to specificity.
 
-#### Properties to Get Started With
+### Properties to Get Started With
 
 The following are some CSS properties that you're going to be using all the time.
 Learn the following to help get you started.
 
-##### Color and Background-Color
+#### Color and Background-Color
 
 The `color` property sets an element's text color, while `background-color` sets
 the background color of an element.
@@ -362,7 +362,7 @@ p {
 Taka a look at [CSS Legal Color Values](https://www.w3schools.com/cssref/css_colors_legal.asp)
 to see how you can adjust the opacity of these colors by adding an alpha value.
 
-##### Typography Basics and Text-Align
+#### Typography Basics and Text-Align
 
 `font-family` can be a single value or a comma-separated list of values that
 determine what font an element uses. Each font will fall into one of two categories,
@@ -390,7 +390,7 @@ on the font.
 common keywords you may have come across in word processors as the value for 
 this property, e.g. `text-align: center`.
 
-##### Image Height and Width
+#### Image Height and Width
 
 Images aren’t the only elements that we can adjust the height and width on,
 but we want to focus on them specifically in this case.
@@ -420,14 +420,14 @@ does load in. Explicitly stating a `height` and `width` prevents this from
 happening, as space will be “reserved” on the page and will just appear as a 
 blank space until the image loads.
 
-#### The Cascade of CSS
+### The Cascade of CSS
 
 The cascade is what determines which rules actually get applied to our HTML. 
 There are different factors that the cascade uses to determine this, three of 
 which we’ll go over to hopefully help you avoid (as many of) those frustrating
 “I hate CSS” moments.
 
-##### Specificity
+#### Specificity
 
 A CSS declaration that is more specific will take precedenct over less specific ones.
 Inline styles have the highest specificity compared to selectors, while each
@@ -595,7 +595,7 @@ take precedence for this element. Rule 2 uses a type selector, which has the low
 specificity value. But rule 1 uses the universal selector (`*`) which has no
 specificity value.
 
-##### Inheritance
+#### Inheritance
 
 Inheritance refers to certain CSS properties that, when applied to an element,
 are inherited by that element's descendants, even if we don't explicitly write
@@ -629,7 +629,7 @@ Despite the `parent` element having a higher specificity with an ID, the `child`
 element would have the `color:blue` style applied since that declaration directly
 targets it, while `color: red` from the parent is only inherited.
 
-##### Rule Order
+#### Rule Order
 
 The final factor, the end of the line, the tie-breaker of the tie-breaker. Let's
 say that after every other factor has been taken into account, there are still
@@ -656,11 +656,11 @@ run through every other factor, including inheritance (none here) and specificit
 the last one defined, and no other factor was able to determine which rule to
 apply, it's the one that gets applied to the element.
 
-#### Adding CSS to HTML
+### Adding CSS to HTML
 
 How to add CSS to HTML. There are three methods to do so.
 
-##### External CSS
+#### External CSS
 
 External CSS is the most common method you will come across, and it involves
 creating a separate file for the CSS and linking it inside of an HTML's opening
@@ -712,7 +712,7 @@ smaller and making things look cleaner.
 2. We only need to edit the CSS in *one* place, which is especially handy for
 websites with many pages that all share similary styles.
 
-##### Internal CSS
+#### Internal CSS
 
 Internal CSS(or embedded CSS) involves adding the CSS within the HTML file
 itself instead of creating a completely separate file. With the internal method,
@@ -747,7 +747,7 @@ website, but it doesn't keep things separate like the external method, and
 depending on how many rules and declarations there are it can cause the HTML
 file to get pretty large.
 
-##### Inline CSS
+#### Inline CSS
 
 Inline CSS makes it possible to add styles directly to HTML elements, though
 this method isn't as recommended:
@@ -775,7 +775,7 @@ adding CSS to HTML for a few reasons:
  - Any inline CSS will override the other two methods, which can cause unexpected
  results. (While we don't dive into it here, this can actually be taken advantage of).
 
-#### Assignment
+### Assignment
 
 1. Go to our [CSS exercises repository](https://github.com/TheOdinProject/css-exercises), read the `README`, and only do the exercises in the `foundations` directory in the order they’re listed, starting with `01-css-methods` and ending with `06-cascade-fix`.
 
@@ -785,7 +785,7 @@ adding CSS to HTML for a few reasons:
 
   - We haven’t covered how to use a custom font for the font-family property yet, so for now take a look at [CSS Fonts](https://www.w3schools.com/Css/css_font.asp) for a list of generic font families to use, and [CSS Web Safe Fonts](https://www.w3schools.com/cssref/css_websafe_fonts.asp) for a list of fonts that are web safe. Web safe means that these are fonts that are installed on basically every computer or device (but be sure to still include a generic font family as a fallback).
 
-#### Knowledge Check
+### Knowledge Check
 
   - What are the main differences between external, internal, and inline CSS?
   - What is the syntax for class and ID selectors?
@@ -795,7 +795,7 @@ adding CSS to HTML for a few reasons:
   - Between a rule that uses one class selector and a rule that uses three type selectors, which rule has the higher specificity?
 
   
-#### Additional Resources
+### Additional Resources
 
   - [The CSS Cascade](https://wattenberger.com/blog/css-cascade) is a great, interactive read that goes a little more in detail about other factors that affect what CSS rules actually end up being applied.
   - [Changing the Font Family](https://www.digitalocean.com/community/tutorials/how-to-load-and-use-custom-fonts-with-css#finding-and-loading-a-font-file-from-a-hosted-service) describes a few different approaches to using custom fonts.

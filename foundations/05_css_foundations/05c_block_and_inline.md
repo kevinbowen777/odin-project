@@ -5,7 +5,7 @@
 
   - [Source](https://www.theodinproject.com/paths/foundations/courses/foundations)
   - Date Started: 20230125
-  - Updated: 20230126
+  - Updated: 20230215
   - Date Completed: 20230208
 ---
 
@@ -20,21 +20,21 @@
 ---
 ### [CSS Foundations](https://www.theodinproject.com/lessons/foundations-css-foundations)
 
-#### Introduction
+### Introduction
 
 The box model articles linked in the previous lesson mentions that different
 display types have subtly different box models. It also mentions that you can
 change how a box is calculated by changing the `display` property. We will
 explore the different display values you can use further in this lesson.
 
-#### Lesson Overview
+### Lesson Overview
 
   - You’ll learn about “Normal flow”.
   - You’ll learn the difference between `block` and `inline` elements.
   - You’ll learn which elements default to `block` and which elements default to `inline`.
   - You’ll learn what divs and spans are.
   
-#### Block vs Inline
+### Block vs Inline
 
 Most of the elements that you have learned about so far are block elements.
 In other words, their default style is `display: block`. By default, block
@@ -54,7 +54,7 @@ and margin. Inline-block is a useful too to know about, but in practice, you'll
 probably end up reaching for flexbox more often if you're trying to line up a 
 bunch of boxes. Flexbox will be covered in-depth in the next lesson.
 
-#### Divs and Spans
+### Divs and Spans
 
 We can't talk about block and inline elements without discussing divs and spans.
 All the other HTML elements we have encountered so far give meaning to their
@@ -129,7 +129,7 @@ other semantic HTML element is appropriate.
 ```
 
 
-#### Assignment
+### Assignment
 
 
 1. The concept of “Normal flow” is implied in the box-model resources, but isn’t laid out very specifically. Read [“Normal Flow”](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Normal_Flow) from MDN to make sure you understand how elements lay themselves out by default.
@@ -139,7 +139,7 @@ other semantic HTML element is appropriate.
 
 
 
-#### Knowledge Check
+### Knowledge Check
 
   - [What is the difference between a block element and an inline element?]()
   - [What is the difference between an inline element and an inline-block element?](https://www.digitalocean.com/community/tutorials/css-display-inline-vs-inline-block)
@@ -150,6 +150,6 @@ other semantic HTML element is appropriate.
   - [Is span block or inline?](https://www.w3schools.com/html/html_blocks.asp)
 
 
-#### Additional Resources
+### Additional Resources
 
   - [This tutorial](https://learnlayout.com/no-layout.html) is a little dated at this point, but its examples are clear. The first 6 slides cover the material we’ve seen so far.

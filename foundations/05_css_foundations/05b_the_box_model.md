@@ -5,7 +5,7 @@
 
   - [Source](https://www.theodinproject.com/paths/foundations/courses/foundations)
   - Date Started: 20230125
-  - Updated: 20230126
+  - Updated: 20230215
   - Date Completed: 20230207
 ---
 
@@ -19,7 +19,7 @@
 ---
 ### [The Box Model](https://www.theodinproject.com/lessons/foundations-the-box-model)
 
-#### Introduction
+### Introduction
 
     The most important skills you need to master with CSS are *positioning*
 and *layout*. Changing fonts and colors is a crucial skill, but being able to
@@ -28,13 +28,13 @@ put things exactly where you want them on a webpage is even more crucial.
 Learning to position elements on a webpage is not that difficult once you
 understand a few key concepts.
 
-#### Lesson Overview
+### Lesson Overview
 
     - You’ll learn all about the *box model*.
     - You’ll learn how to make sure elements are just the right size with
         `margin`, `padding`, and `borders`
   
-#### The Box Model
+### The Box Model
 
 The first important concept one needs to undertstand to be successful in CSS
 is the box model. It isn't complicated, but skipping over it now will cause
@@ -67,7 +67,7 @@ sum it up briefly:
   - `margin` increases the space between a box and any others that sit next to it.
   - `border` adds space(even if it's only a pixel or two) between the margin and the padding.
 
-#### Assignment
+### Assignment
 
 1. [This video](https://www.youtube.com/watch?v=rIO5326FgPE) is a straightforward overview of the box model, padding and margin. Go ahead and watch this now; it informs everything else.
 2. Because the box model concept is so incredibly fundamental, check out [this lesson from MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model). It covers the same material as the video above, but it goes a little further in-depth. Pay close attention to the examples and take the time to experiment with their in-browser editor!
@@ -75,7 +75,7 @@ sum it up briefly:
 
 
 
-#### Knowledge Check
+### Knowledge Check
 
   - From inside to outside, what is the order of box-model properties?
   - [What does the `box-sizing` CSS property do?](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#the_alternative_css_box_model)
@@ -85,6 +85,6 @@ sum it up briefly:
   - [Would you use margin or padding if you wanted two elements to overlap each other?](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model#margins_padding_and_borders)
 
   
-#### Additional Resources
+### Additional Resources
 
   - [This W3Schools tutorial on CSS Box Model](https://www.w3schools.com/css/css_boxmodel.asp) provides an interactive playground to test your box model skills with exercises.
