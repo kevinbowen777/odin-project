@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
 body {
   margin: 0;
@@ -13,7 +13,7 @@ body {
   background-color: #1F2937;
 }
 
-.container {
+.card-container {
   display: flex;
   justify-content: center;
   align-content: space-between;
@@ -21,7 +21,17 @@ body {
   text-align: center;
 }
 
-.header {
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.right {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: flex-end;
+  width: 50%;
 }
 
 .footer {
@@ -40,6 +50,7 @@ body {
 
 .logo {
   font-size: 24px;
+  font-weight: 900;
   color: #F9FAF8;
   flex: 1;
 }
@@ -103,7 +114,7 @@ img {
   font-style: bold;
   color: #1F2937;
   text-align: center;
-  top-padding: 15px;
+  padding: 15px;
 }
 
 .subtext {
@@ -115,9 +126,22 @@ img {
 .quote {
   display: flex;
   flex-direction: column;
-  margin-left: 200px;
-  margin-right: 200px;
-  text-align: center;
+  justify-content: center;
+  background-color: #E5E7EB;
+  padding: 7em 13em;
+}
+
+.quote p {
+  align-self: flex-end;
+  font-weight: bolder;
+  font-size: 24px;
+  color: #1F2937;
+}
+
+.quote em {
+  font-size: 36px;
+  font-weight: 100;
+  color: #1F2937;
 }
 
 .text {
@@ -126,22 +150,21 @@ img {
   color: #1F2937;
 }
 
-.author {
-  font-weight: bold;
-  text-align: right;
+.sign-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5em 14em;
 }
 
-.action {
+.container {
   display: flex;
-  width: 70%;
-  align-items center;
-  justify-content: center;
-  margin: auto;
+  justify-content: space-around;
+  align-items: center;
   background-color: #3882F6;
-  box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  padding: 3em;
+  width: 100%;
   border-radius: 10px;
-  padding 16px;
-  height: 100px;
 }
 
 button {
@@ -149,9 +172,11 @@ button {
   border: 1px solid white;
   border-radius: 8px;
   color: white;
-  font-weight;
   padding: 8px 24px;
 }
+
+.main button {
+  border: none;
 
 .info {
   display: flex;
