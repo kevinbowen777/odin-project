@@ -48,8 +48,62 @@
   - What is the Unary Plus Operator?
   
 ### How to Run JavaScript Code
+
+All JavaScript we will be writing in the majority of the Foundations course will be run via the browser. Later lessons in Foundations and the NodeJS path will show you how to run JavaScript outside of the browser environment. Outside of these lessons, for now you should always default to running your JavaScript in the browser unless otherwise specified, otherwise you may run into unexpected errors.
+
+The simplest way to get started is to simply create an HTML file with the JavaScript code inside of it. Type the basic HTML skeleton into a file on your computer somewhere:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Page Title</title>
+</head>
+<body>
+  <script>
+    // Your JavaScript goes here!
+    console.log("Hello, World!")
+  </script>
+</body>
+</html>
+```
+
+Save and open this file up in a web browser and then open up the browser’s console by right-clicking on the blank webpage and selecting “Inspect” or “Inspect Element”. In the ‘Developer Tools’ pane find and select the ‘Console’ tab, where you should see the output of our `console.log` statement.
+
+>"console.log() is the command to print something to the developer console in
+your browser. You can use this to print the results from any of the following
+articles and exercises to the console. We encourage you to code along will all
+of the examples in this and future lessons."
+
+Another way to include JavaScript in a webpage is through an external script.
+This is very similar to linking external CSS docs to your website.
+
+`<script src="javascript.js"></script>`
+
 ### Variables
+
+Until recently there was only one way to create a variable in JavaScript -
+the `var` statement. But in the newest JavaScript versions we have two more
+ways - `let` and `const`.
+
+1. Read and work through [this variable tutorial](http://javascript.info/variables)
+
+The above tutorial mentioned this, but it is important enough to note again:
+`let` and `const` are both relatively new ways to declare variables in JavaScript.
+In *many* tutorials(and code) across the internet you're likely to encounter
+`var` statements. Don't let it bother you! There's nothing inherently wrong
+with `var`, and in most cases `var` and `let` behave the same way. But sometimes
+the behavior of `var` is *not* what you would expect. Just stick to `let` and
+`const` for now.
+
 ### Numbers
+
+1. [This W3Schools lesson](https://www.w3schools.com/js/js_arithmetic.asp) followed by [this one](https://www.w3schools.com/js/js_numbers.asp), are good introductions to what you can accomplish with numbers in JavaScript.
+2. [This MDN article](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Math) covers the same info from a slightly different point of view, while also teaching you how to apply some basic math in JavaScript. There’s much more that you can do with numbers, but this is all you need at the moment.
+3. Read through (and code along with!) [this article](http://javascript.info/operators) about operators in Javascript. Don’t forget to do the “Tasks” at the bottom of the page! It will give you a pretty good idea of what you can accomplish with numbers (among other things!) in JavaScript.
+
+
 
 ### Assignment
 
