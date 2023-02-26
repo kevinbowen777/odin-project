@@ -6,7 +6,7 @@
   - [Source](https://www.theodinproject.com/paths/foundations/courses/foundations)
   - Date Started: 20230125
   - Updated: 20230216
-  - Date Completed:
+  - Date Completed: 20230224
 ---
 
 ### Table of Contents
@@ -31,6 +31,9 @@
 ### [JavaScript Developers Tools](https://www.theodinproject.com/lessons/foundations-javascript-developer-tools)
 
 ### Introduction
+
+Knowing how to use the Developer Tools inside your browser is an important skill for any web developer. The Developer Tools are useful for running JavaScript code, editing HTML and CSS styles without having to refresh the page, and viewing performance data.
+
 ### Lesson Overview
 
   - Change screen size of a website with developer tools
@@ -48,19 +51,22 @@
   
 ### Opening Dev Tools
 
+f12
+ctrl-shift-k
+
 ### Assignment
 
-1. Head to the Chrome DevTools Documentation by Google. The following subsections cover what you’ll be using the Developer Tools for 95% of the time. Feel free to skip the elements you are already familiar with:
+1. Head to the [Chrome DevTools Documentation](https://developer.chrome.com/docs/devtools/) by Google. The following subsections cover what you’ll be using the Developer Tools for 95% of the time. Feel free to skip the elements you are already familiar with:
   - CSS
-    - View and change CSS
-    - CSS features reference
-  - Get Started With Viewing And Changing The DOM
+    - [View and change CSS](https://developer.chrome.com/docs/devtools/css/)
+    - [CSS features reference](https://developer.chrome.com/docs/devtools/css/reference/)
+  - [Get Started With Viewing And Changing The DOM](https://developer.chrome.com/docs/devtools/dom/)
   - Mobile Simulation
-    - Simulate mobile devices with Device Mode
+    - [Simulate mobile devices with Device Mode](https://developer.chrome.com/docs/devtools/device-mode/)
   - JavaScript
-    - Debug JavaScript
-    - Pause your code with breakpoints
-2. Then, watch the console overview video and read through the page to familiarize yourself with the console and its usage.
+    - [Debug JavaScript](https://developer.chrome.com/docs/devtools/javascript/)
+    - [Pause your code with breakpoints](https://developer.chrome.com/docs/devtools/javascript/breakpoints/)
+2. Then, watch [the console overview video and read through the page](https://developer.chrome.com/docs/devtools/console/) to familiarize yourself with the console and its usage.
   
 ### Additional Resources
 
