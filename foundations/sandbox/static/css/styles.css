@@ -1,0 +1,74 @@
+body {
+  font-family: arial;
+  /* color: #333; */
+}
+
+h1 {
+  font-weight: normal;
+  margin: 20px auto;
+  text-align: center;
+  color: #333;
+}
+
+h3 {
+  font-weight: normal;
+  margin: 20px auto;
+  /* text-align: center; */
+  color: #333;
+}
+
+.box-test {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+}
+
+.box-one {
+  background-color: #EB5757;
+  padding: 10px;
+  height: 100px;
+  width: 100px;
+  border: 30px solid #9B51E0;
+  margin: 60px;
+  /* box-sizing: border-box; */
+}
+
+.box-two {
+  background-color: #2D9CDB;
+  padding: 10px;
+  height: 100px;
+  width: 100px;
+  border: 30px solid #27AE60;
+  margin: 60px;
+  /* box-sizing: inline-box; */
+}
+
+.box-flow {
+  width: 500px;
+  margin: 0 auto;
+}
+
+p {
+  background: rgba(255, 84, 104, 0.3);
+  border: 2px solid rgb(255, 84, 104);
+  padding: 10px;
+  margin: 10px;
+}
+
+span {
+  background: white;
+  border: 1px solid black;
+}
+
+.flex-container {
+  display: flex;
+}
+
+/* this selector selects all divs
+ * inside of .flex-container */
+.flex-container div {
+  background: peachpuff;
+  border: 4px solid brown;
+  height: 100px;
+  flex: 1;
+}
