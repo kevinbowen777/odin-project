@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../static/css/form_styles.css">
+    <title>JavaScript Form Validation with RegExes</title>
+  </head>
+
+  <body>
+    <h3>JavaScript Form Validation with RegExes</h3>
+    <h1>New User Signup</h1>
+    <form>
+
+      <input type="text" name="username" placeholder="username">
+      <p>Usernhame must be alphanumeric and contain 5 - 12 characters</p>
+
+      <input type="text" name="email" placeholder="email">
+      <p>Email must be a valid address, e.g. me@mydomain.com</p>
+      
+      <input type="password" name="password" placeholder="password">
+      <p>Password must be alphanumeric (@._ and - are also allowed) and be 8 - 20 characters.</p>
+
+      <input type="text" name="telephone" placeholder="telephone">
+      <p>Telephone must be a valid US telephone number (10 digits)</p>
+
+      <input type="text" name="slug" placeholder="profile slug">
+      <p>Slug must contain only lowecase letters, numbers and hyphens and be 8 - 20 characters.</p>
+    </form>
+        <script>
+          // Your JavaScript goes here!
+          console.log("Welcome to JavaScript Form Validation with RegExes!")
+          const button = document.querySelector("button");
+        </script>
+        <script src="../../static/js/form_validate.js"></script>
+  </body>
+</html>
