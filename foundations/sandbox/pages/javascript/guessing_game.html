@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../static/css/guessing_game.css">
+    <title>Number Guessing Game</title>
+  </head>
+
+  <body>
+    <h3>Number Guessing Game</h3>
+
+    <p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</p>
+
+    <div class="form">
+      <label for="guessField">Enter a guess: </label>
+      <input type="number" min="1" max="100" required id="guessField" class="guessField">
+      <input type="submit" value="Submit guess" class="guessSubmit">
+    </div>
+
+    <div class="resultParas">
+      <p class="guesses"></p>
+      <p class="lastResult"></p>
+      <p class="lowOrHi"></p>
+    </div>
+
+        <script>
+          // Your JavaScript goes here!
+          console.log("Welcome to the JavaScript Number Guessing Game!")
+          console.log("Good Luck!")
+        </script>
+        <script src="../../static/js/guessing_game.js"></script>
+  </body>
+</html>
