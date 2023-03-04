@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../static/css/styles.css">
+    <title>JavaScript Function Library</title>
+  </head>
+
+  <body>
+    <h3>Function Library</h3>
+      <input class="numberInput" type="text"></input>
+      <p></p>
+        <script>
+          // Your JavaScript goes here!
+          console.log("Hello, World!")
+          console.log("Welcome to Function Library!")
+          const input = document.querySelector('.numberInput');
+          const para = document.querySelector('p');
+          function squared(num) {
+            return num * num;
+          }
+
+          function cubed(num) {
+            return num * num * num;
+          }
+
+          function factorial(num) {
+            if (num < 0) return undefined;
+            if (num === 0) return 1;
+            let x = num - 1;
+            while (x > 1) {
+              num *= x;
+              x--;
+            }
+            return num;
+          }
+          input.addEventListener("change", () => {
+            const num = parseFloat(input.value);
+            if (isNaN(num)) {
+              para.textContent = "You need to enter a number!";
+            } else {
+              para.textContent = `${num} squared is ${squared(num)}. `;
+              para.textContent += `${num} cubed is ${cubed(num)}. `;
+              para.textContent += `${num} factorial is ${factorial(num)}. `;
+            }
+          });
+        </script>
+        <script src="../../static/js/fundamentals_pt3.js"></script>
+  </body>
+</html>
